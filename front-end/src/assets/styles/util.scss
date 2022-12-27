@@ -1,0 +1,40 @@
+// MODAL
+.modal-blur.active {
+  position: fixed;
+  top: $header-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 996;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.modal-blur {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+// SECTION
+
+.section_img {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.section_content {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.section_content.active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  transition-delay: 100ms;
+}
+.section_img.active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  transition-delay: 100ms;
+}
